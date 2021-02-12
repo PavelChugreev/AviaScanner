@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avia Scanner</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="filter">
+            <div class="rate">Сортировать
+                <div><input type="radio" name="low" id="low"><label for="low">По убыванию цены</label></div>
+                <div><input type="radio" name="low" id="high"><label for="high">По возрастанию цены</label> </div>
+                <div><input type="radio" name="low" id="time"><label for="time">По времени вылета</label> </div>
+                <div><input type="radio" name="low" id="dur"><label for="dur">По продолжительности</label> </div>
+            </div>
+            <div class="price">Цена
+                <div>
+                    <span>От</span>
+                    <input type="number" name="lowLimit" id="lowLimit" value="0">
+                </div>
+                <div>
+                    <span>До</span>
+                    <input type="number" name="highLimit" id="highLimit" value="100000">
+                </div>
+
+
+                <input class="sbmt" type="submit" value="Применить">
+            </div>
+            <div class="carriers">Авиакомпания</div>
+        </form>
+
+        <div class="field"></div>
+    </div>
+
+
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
